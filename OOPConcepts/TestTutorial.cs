@@ -28,18 +28,18 @@ namespace OOPConcepts
             /*MyCircle mc = new MyCircle(10, 20, 8);
             Console.WriteLine(mc.getArea());*/
 
-           /* MyPoint p1 = new MyPoint();
-            p1.setXY(7, 2);
+            /* MyPoint p1 = new MyPoint();
+             p1.setXY(7, 2);
 
-            MyPoint p2 = new MyPoint(4,4);
+             MyPoint p2 = new MyPoint(4,4);
 
-            Console.WriteLine(p1.distance(p2));*/
+             Console.WriteLine(p1.distance(p2));*/
 
-            PhotoAlbum album1 = new PhotoAlbum();
+            /*PhotoAlbum album1 = new PhotoAlbum();
             PhotoAlbum album2 = new PhotoAlbum(24);
-            BigPhotoAlbum bAlbum = new BigPhotoAlbum();
+            PhotoAlbum album3 = new BigPhotoAlbum();
 
-            Console.WriteLine(bAlbum.getNumberOfPages()+album1.getNumberOfPages()+album2.getNumberOfPages());
+            Console.WriteLine(album1.getNumberOfPages()+ album2.getNumberOfPages()+ album3.getNumberOfPages());*/
 
             Console.ReadKey();
         }

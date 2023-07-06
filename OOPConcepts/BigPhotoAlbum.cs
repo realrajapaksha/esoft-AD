@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace OOPConcepts
 {
-    internal class BigPhotoAlbum 
+    internal class BigPhotoAlbum : PhotoAlbum
     {
         private int numOfPages;
 
-        public BigPhotoAlbum()
+        public BigPhotoAlbum() : base(64)
         {
-            this.numOfPages = 64;
-        }
 
-       public int getNumberOfPages() { return numOfPages; }
+        }
     }
 }
