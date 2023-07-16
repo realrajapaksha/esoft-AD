@@ -53,7 +53,7 @@ namespace DataStructures_Day_2
 
             stack.Display();*/
 
-            Console.WriteLine("Print Reverse Name");
+            /*Console.WriteLine("Print Reverse Name");
             Console.Write("Enter your name: ");
             string name = Console.ReadLine();
 
@@ -64,7 +64,51 @@ namespace DataStructures_Day_2
                 nameStack.Push(name[i]);
             }
 
-            nameStack.Display();
+            nameStack.Display();*/
+
+            Console.WriteLine("Symbol Checker");
+            Console.Write("Write Any code: ");
+
+            string code = Console.ReadLine();
+            NameStack codeStack = new NameStack();
+
+            for (int i = 0; i < code.Length; i++)
+            {
+                if (code[i] == '{' || code[i] == '(' || code[i] == '[')
+                {
+                    codeStack.Push(code[i]);
+                }
+                else if (code[i] == '}' || code[i] == ')' || code[i] == ']')
+                {
+                    char sy = codeStack.Pop();
+                    if (code[i] == '}')
+                    {
+                        if (sy != '{')
+                        {
+                            Console.WriteLine("Error at " + i + " ^" + code[i]);
+                        }
+                    }
+
+                    if (code[i] == ')')
+                    {
+                        if (sy != '(')
+                        {
+                            Console.WriteLine("Error at " + i + " ^" + code[i]);
+                        }
+                    }
+
+                    if (code[i] == ']')
+                    {
+                        if (sy != '[')
+                        {
+                            Console.WriteLine("Error at " + i + " ^" + code[i]);
+                        }
+                    }
+
+
+                }
+            }
+
 
             Console.ReadKey();
         }
