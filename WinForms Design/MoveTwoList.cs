@@ -25,18 +25,7 @@ namespace WinForms_Design
 
         private void btnMulLToR_Click(object sender, EventArgs e)
         {
-            /*int i = 0;
-            while (lstLeft.SelectedItems.Count != 0)
-            {
-                lstRight.Items.Add(lstLeft.SelectedItems[i]);
-                Console.WriteLine(i+"");
-                i++;
-            }*/
-
-            /*foreach (var item in lstLeft.SelectedItems)
-            {
-                lstRight.Items.Add(item);
-            }*/
+        
             while (lstLeft.SelectedItems.Count > 0)
             {
                 lstRight.Items.Add(lstLeft.SelectedItems[0]);
