@@ -70,14 +70,13 @@ namespace Databases
 
         private void cmbSID_SelectedValueChanged(object sender, EventArgs e)
         {
-            String item =  cmbSID.SelectedItem.ToString();
-            Console.WriteLine(item);
+            String item = cmbSID.SelectedItem.ToString();
             checkID(item);
         }
 
         private void checkID(string id)
         {
-            string quary = "SELECT * FROM marks where id='" + id + "'";
+            string quary = "SELECT * FROM marks where sid='" + id + "'";
 
             MySqlCommand mySqlCommand = new MySqlCommand(quary, dbCon);
             mySqlCommand.CommandTimeout = 60;
@@ -125,6 +124,21 @@ namespace Databases
                 dbCon.Close();
                 MessageBox.Show("Error " + ex);
             }
+        }
+
+        private void cmbSID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

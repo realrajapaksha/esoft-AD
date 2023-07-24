@@ -49,6 +49,7 @@
             this.btnInsert.TabIndex = 0;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnClear
             // 
@@ -96,6 +97,7 @@
             this.label3.Size = new System.Drawing.Size(107, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Select student ID";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -134,6 +136,7 @@
             this.cmbSID.Name = "cmbSID";
             this.cmbSID.Size = new System.Drawing.Size(257, 24);
             this.cmbSID.TabIndex = 10;
+            this.cmbSID.SelectedIndexChanged += new System.EventHandler(this.cmbSID_SelectedIndexChanged);
             this.cmbSID.SelectedValueChanged += new System.EventHandler(this.cmbSID_SelectedValueChanged);
             // 
             // Form3
