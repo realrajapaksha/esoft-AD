@@ -1,0 +1,13 @@
+Software Development
+
+Software Development Lifecycle or Application Lifecycle Management
+-------------------------------------------------------------------
+Requirement > design > development > testing > maintainance
+
+
+Software Testing
+--------------------
+1. Black box
+2. White box
+
+
