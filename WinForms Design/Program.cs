@@ -14,9 +14,13 @@ namespace WinForms_Design
         [STAThread]
         static void Main()
         {
+            if(Environment.OSVersion.Version.Major >= 6)
+            {
+                SetProcessDPIAware();
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
+            Application.Run(new Form1());
             //Application.Run(new Form2());
             //Application.Run(new Form3());
             //Application.Run(new Form4());
@@ -24,7 +28,9 @@ namespace WinForms_Design
             //Application.Run(new Form6());
             //Application.Run(new Form7());
             //Application.Run(new Form8());
-            Application.Run(new MoveTwoList());
+            //Application.Run(new MoveTwoList());
         }
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool SetProcessDPIAware();
     }
 }

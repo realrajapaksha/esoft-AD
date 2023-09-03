@@ -40,7 +40,7 @@
             this.lblHello.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.lblHello.Location = new System.Drawing.Point(75, 57);
             this.lblHello.Name = "lblHello";
-            this.lblHello.Size = new System.Drawing.Size(290, 63);
+            this.lblHello.Size = new System.Drawing.Size(285, 63);
             this.lblHello.TabIndex = 0;
             this.lblHello.Text = "Hello World";
             // 
@@ -67,8 +67,8 @@
             // Form1
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(435, 470);
             this.Controls.Add(this.btnSubmit);
